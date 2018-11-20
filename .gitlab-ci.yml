@@ -1,0 +1,48 @@
+stages:
+  - generate:html
+  - pre-pack
+  - generate:pdf
+
+image: docker:stable
+
+variables:
+  REPOSITORY_NGINX: "${CI_REGISTRY_IMAGE}/${ARTIFACT_NGINX_CONTAINER}:${CI_COMMIT_SHA}"
+
+generate:html:
+  stage: generate:html
+  image: registry.gitlab.com/pages/hugo:latest
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  script:
+    - hugo --baseURL http://site
+    - cp Dockerfile public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
+pre-pack:
+  stage: pre-pack
+  script:
+    - mkdir ~/.docker
+    - echo "${CI_JOB_TOKEN}" | docker login -u gitlab-ci-token --password-stdin "${CI_REGISTRY}"
+    - docker pull "${NGINX_CONTAINER}"
+
+    - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX}" -f docker/Dockerfile .
+    - docker push "${REPOSITORY_NGINX}"
+    services:
+    - name: docker:stable-dind
+
+generate:pdf:
+  stage: generate:pdf
+  image: node:11
+  variables:
+    GIT_SUBMODULE_STRATEGY: none
+  script:
+  - hugo
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

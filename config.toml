@@ -1,0 +1,14 @@
+baseURL = "https://jan.trejbal.land/"
+languageCode = "en-us"
+title = "Jan Trejbal"
+theme = "winning"
+googleAnalytics = "UA-129134762-2"
+enableRobotsTXT = true
+
+disableKinds = ["RSS"]
+defaultContentLanguage = "en"
+[taxonomies]
+
+[author]
+    name = "Jan Trejbal"
+    email = "jan@trejbal.land"
