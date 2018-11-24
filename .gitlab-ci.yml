@@ -31,8 +31,8 @@ pre-pack:
 
     - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX}" -f docker/Dockerfile .
     - docker push "${REPOSITORY_NGINX}"
-    services:
-    - name: docker:stable-dind
+  services:
+  - name: docker:stable-dind
 
 generate:pdf:
   stage: generate:pdf
