@@ -12,6 +12,7 @@ generate:html:
   stage: generate:html
   image: registry.gitlab.com/pages/hugo:latest
   variables:
+    CI_DEBUG_TRACE: "true"
     GIT_SUBMODULE_STRATEGY: recursive
   script:
     - hugo --baseURL http://site
