@@ -1,0 +1,11 @@
+@page {
+    margin: 0;
+}
+
+body {
+    padding: 1cm 1cm 1cm 1cm;
+}
+
+.footer {
+    display: none;
+}

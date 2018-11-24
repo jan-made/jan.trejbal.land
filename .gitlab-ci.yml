@@ -2,6 +2,7 @@ stages:
   - generate:html
   - pre-pack
   - generate:pdf
+  - pack
 
 image: docker:stable
 
@@ -36,12 +37,11 @@ pre-pack:
 
 generate:pdf:
   stage: generate:pdf
-  image: node:11
+  image: alpeware/chrome-headless-trunk
   variables:
     GIT_SUBMODULE_STRATEGY: none
   script:
-    - npm install
-    - node generatepdf.js
+    - chrome-linux/chrome --headless --no-sandbox --disable-gpu --print-to-pdf=static/cv.pdf http://site
     - hugo
   services:
     - name: "${REPOSITORY_NGINX_INTERMEDIATE}"
@@ -51,3 +51,15 @@ generate:pdf:
     - public
   only:
   - master
+
+pack:
+  stage: pack
+  script:
+    - mkdir ~/.docker
+    - echo "${CI_JOB_TOKEN}" | docker login -u gitlab-ci-token --password-stdin "${CI_REGISTRY}"
+    - docker pull "${NGINX_CONTAINER}"
+
+    - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX}" -f docker/Dockerfile .
+    - docker push "${REPOSITORY_NGINX}"
+  services:
+    - name: docker:stable-dind
