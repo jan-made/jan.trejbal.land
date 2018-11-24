@@ -56,9 +56,9 @@ pack:
   script:
     - mkdir ~/.docker
     - echo "${CI_JOB_TOKEN}" | docker login -u gitlab-ci-token --password-stdin "${CI_REGISTRY}"
-    - docker pull "${NGINX_CONTAINER}"
+    - docker pull "${REPOSITORY_NGINX_INTERMEDIATE}"
 
-    - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX}" -f docker/Dockerfile .
+    - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${REPOSITORY_NGINX_INTERMEDIATE}" -t "${REPOSITORY_NGINX}" -f docker/DockerfilePack .
     - docker push "${REPOSITORY_NGINX}"
   services:
     - name: docker:stable-dind
