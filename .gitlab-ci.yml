@@ -13,7 +13,6 @@ generate:html:
   stage: generate:html
   image: registry.gitlab.com/pages/hugo:latest
   variables:
-    CI_DEBUG_TRACE: "true"
     GIT_SUBMODULE_STRATEGY: recursive
   script:
     - hugo --baseURL http://site
@@ -28,7 +27,7 @@ pre-pack:
   script:
     - mkdir ~/.docker
     - echo "${CI_JOB_TOKEN}" | docker login -u gitlab-ci-token --password-stdin "${CI_REGISTRY}"
-    - docker pull "${REPOSITORY_NGINX_INTERMEDIATE}"
+    - docker pull "${NGINX_CONTAINER}"
 
     - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX_INTERMEDIATE}" -f docker/Dockerfile .
     - docker push "${REPOSITORY_NGINX_INTERMEDIATE}"
@@ -41,7 +40,12 @@ generate:pdf:
   variables:
     GIT_SUBMODULE_STRATEGY: none
   script:
-  - hugo
+    - npm install
+    - node generatepdf.js
+    - hugo
+  services:
+    - name: "${REPOSITORY_NGINX_INTERMEDIATE}"
+      alias: site
   artifacts:
     paths:
     - public
