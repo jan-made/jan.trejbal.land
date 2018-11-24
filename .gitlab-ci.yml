@@ -41,7 +41,7 @@ generate:pdf:
   variables:
     GIT_SUBMODULE_STRATEGY: none
   script:
-    - chrome-linux/chrome --headless --no-sandbox --disable-gpu --print-to-pdf=static/cv.pdf http://site
+    - /chrome-linux/chrome --headless --no-sandbox --disable-gpu --print-to-pdf=static/cv.pdf http://site
     - hugo
   services:
     - name: "${REPOSITORY_NGINX_INTERMEDIATE}"
