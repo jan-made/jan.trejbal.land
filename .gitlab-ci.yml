@@ -25,6 +25,8 @@ generate:html:
 
 pre-pack:
   stage: pre-pack
+  variables:
+    DOCKER_BUILD_ARG: '--squash'
   script:
     - mkdir ~/.docker
     - echo "${CI_JOB_TOKEN}" | docker login -u gitlab-ci-token --password-stdin "${CI_REGISTRY}"
@@ -34,6 +36,7 @@ pre-pack:
     - docker push "${REPOSITORY_NGINX_INTERMEDIATE}"
   services:
   - name: docker:stable-dind
+    command: ["--experimental"]
 
 generate:pdf:
   stage: generate:pdf
@@ -54,6 +57,8 @@ generate:pdf:
 
 pack:
   stage: pack
+  variables:
+    DOCKER_BUILD_ARG: '--squash'
   script:
     - mkdir ~/.docker
     - echo "${CI_JOB_TOKEN}" | docker login -u gitlab-ci-token --password-stdin "${CI_REGISTRY}"
@@ -63,3 +68,4 @@ pack:
     - docker push "${REPOSITORY_NGINX}"
   services:
     - name: docker:stable-dind
+      command: ["--experimental"]
