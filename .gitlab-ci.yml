@@ -8,6 +8,7 @@ image: docker:stable
 
 variables:
   REPOSITORY_NGINX_INTERMEDIATE: "${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_SLUG}:intermediate-${CI_COMMIT_SHA}"
+  REPOSITORY_NGINX_SITE: "${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_SLUG}:site-${CI_COMMIT_SHA}"
   REPOSITORY_NGINX: "${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHA}"
 
 generate:html:
@@ -16,10 +17,12 @@ generate:html:
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
   script:
-    - hugo --baseURL http://site
+    - hugo --baseURL http://site -d public_site
+    - hugo
   artifacts:
     paths:
       - public
+      - public_site
   only:
     - master
 
@@ -34,6 +37,9 @@ pre-pack:
 
     - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX_INTERMEDIATE}" -f docker/Dockerfile .
     - docker push "${REPOSITORY_NGINX_INTERMEDIATE}"
+    -
+    - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX_SITE}" -f docker/DockerfileSite .
+    - docker push "${REPOSITORY_NGINX_SITE}"
   services:
   - name: docker:stable-dind
     command: ["--experimental"]
@@ -47,7 +53,7 @@ generate:pdf:
     - mkdir -p public
     - /chrome-linux/chrome --headless --no-sandbox --disable-gpu --print-to-pdf=public/cv.pdf http://site
   services:
-    - name: "${REPOSITORY_NGINX_INTERMEDIATE}"
+    - name: "${REPOSITORY_NGINX_SITE}"
       alias: site
   artifacts:
     paths:
