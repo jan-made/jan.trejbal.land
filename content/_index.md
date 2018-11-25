@@ -37,7 +37,7 @@ I led technical workshops for children. Mainly focused on computers and building
 
 ## Education
 
-###### *2012 - 2016*
+###### *2012 - 2015*
 ### Bachelor of Cybernetics and Robotics
 
 [Faculty of Electrical engineering](https://kyr.fel.cvut.cz), CTU Prague
