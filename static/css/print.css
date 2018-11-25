@@ -3,7 +3,8 @@
 }
 
 body {
-    padding: 1cm 1cm 1cm 1cm;
+    padding: 0 1cm 1cm 1cm;
+    font-size: 1.2em;
 }
 
 .footer {
