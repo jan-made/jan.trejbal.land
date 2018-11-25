@@ -37,7 +37,7 @@ pre-pack:
 
     - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX_INTERMEDIATE}" -f docker/Dockerfile .
     - docker push "${REPOSITORY_NGINX_INTERMEDIATE}"
-    -
+
     - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX_SITE}" -f docker/DockerfileSite .
     - docker push "${REPOSITORY_NGINX_SITE}"
   services:
