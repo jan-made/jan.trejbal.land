@@ -2,67 +2,99 @@
 title: CV
 ---
 # Jan Trejbal
-Bacon ipsum dolor amet bacon filet mignon bresaola, pork burgdoggen shankle doner. Tenderloin short loin bresaola landjaeger porchetta. Swine venison salami brisket ground round biltong chuck short ribs ribeye shoulder leberkas sausage shankle. Pork chop ground round ball tip picanha. Pig salami biltong buffalo sausage rump ball tip. Pork loin shoulder biltong, meatloaf leberkas cupim chuck.
+I am a student of Cybernetics and robotics at CTU in Prague in a master program, I am planning to finish my studies in June 2019.
+
+I like to create software parts which can be open-source; you can find my work on [Github](https://github.com/trejjam). I use mainly [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), but I did move to [ASP.NET Core 2.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1) lately.
 
 {{% grid %}}
 
 {{% column -span-cols-6 -m-right-2 %}}
 ## Professional Experience
-###### *May 2015 - Present*
-### Company A — UI/UX Lead 
+###### *March 2017 - Present*
+### [Scalesoft](http://scalesoft.cz) — Software developer  
 
-Bacon ipsum dolor amet bacon filet mignon bresaola, pork burgdoggen shankle doner. Tenderloin short loin bresaola landjaeger porchetta. Swine venison salami brisket ground round biltong chuck short ribs ribeye shoulder leberkas sausage shankle. Pork chop ground round ball tip picanha. Pig salami biltong buffalo sausage rump ball tip. Pork loin shoulder biltong, meatloaf leberkas cupim chuck.
+I come to the company to develop and maintain PHP application in the [Azure](https://azure.microsoft.com/). I designed whole scalable runtime and CI/CD process on top of the [Docker](https://docker.com) technology.
 
-* Leberkas sausage shankle. Pork chop ground round ball tip picanha.
-* Gamet bacon filet mignon bresaola, pork burgdoggen shankle doner. Tenderloin
-* Pig salami biltong buffalo sausage rump ball tip. Pork loin shoulder biltong
+Since July 2018 I moved to ASP.NET.
 
+Technology I mastered for production environment:
+- PHP 5.6, then PHP 7.2
+- Doctrine
+- Mariadb
+- NGINX
+- Docker
+- Memcached
+- ASP.NET Core
+- PostgreSQL
 
-###### *September 2010 - April 2015*
-### Company B — Managing Director/Owner
+###### *March 2016 - March 2017*
+### Czech Academy of Science - C# Software developer  
 
-Swine venison salami brisket ground round biltong chuck short ribs ribeye
+I did participate on development of portal called [RIDICS](http://vokabular.ujc.cas.cz/informace.aspx?t=ovokabulari&o=ovokabulari). I was responsible for converting the data from linguists into the portal supported format.
 
-* Leberkas sausage shankle. Pork chop ground round ball tip picanha.
-* Pig salami biltong buffalo sausage rump ball tip. Pork loin shoulder biltong
+###### *2010 - Present*
+### [TREMI](http://tremi.cz) - technical support   
 
+I maintain servers, applications, working stations. I develop small in house applications.
+
+###### *2008 - 2016*
+### [Dům dětí a mládeže](https://www.ddmliberec.cz/) - lecturer   
+
+I led technical workshops for children. Mainly focused on computers and building electrical circuits.
 
 {{% /column %}}
 
 {{% column -span-cols-4 -p-left-3 %}}
+#### Contact
+  Email: [jan@trejbal.land](mailto:jan@trejbal.land)  
+  Tel: [+420 608280353](tel:+420608280353)  
+  Website: [jan.trejbal.land](https://jan.trejbal.land)    
+  [GitHub](https://github.com/trejjam)  
+  [Facebook](https://facebook.com/trejjam)    
+  [Twitter](https://twitter.com/trejjam)  
+  
+  ##### Permanent residence
+  Jan Trejbal  
+  Proseč pod Ještědem 52  
+  463 43
+
 #### Fluent with
-  * Sketch
-  * HTML5
-  * CSS3, grid and flexbox
-  * SVG animation & GSAP
-  * PostCSS & Sass
+  - PHP
+  - .NET Core
+  - Typescript
+  - NGINX
+  - Docker
+  - Centos
+  - Arch linux
+  - SQL
+  - HTML5
+  - CSS3
+  - SVG
+  - Sass
 
 #### Familiar with
-  * Node.js
-  * Riot.Js
-  * Hugo.io (Static site generator)
+  - Node.js
+  - Hugo.io (Static site generator)
 
 #### Interested in
-  * Web components
-  * Svelte + Sapper
-  * WebVR / A-Frame
-
+  - Go
+  - Kotlin
 
 #### Other Info
-{{% dd %}}
-- **Language:**
-  1. I can speak English
-- **Napoleon:**
-  1. I have numchuck skills too
-{{% /dd %}}
-
+##### Language:
+  I can speak English  
+  I am interested in Spanish
+##### Location:
+  I prefer work in the office in Prague  
+  I can work remotely
 
 ## Hobbies/Interests
-I have interests...
+I really like dancing argentine tango, I also attend [the first tango flashmob in prague](https://www.youtube.com/watch?v=yK91kXee3wU).  
+I like skiing, wakeboarding, kiting and yachting.
 
 {{% printonly %}}
 ##   References
-Please contact me at [youremail@email.com](mailto:youremail@email.com) for references.
+Please contact me at [jan@trejbal.land](mailto:jan@trejbal.land) for references.
 {{% /printonly %}}
 
 {{% /column %}}
