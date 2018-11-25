@@ -39,8 +39,9 @@ generate:pdf:
   stage: generate:pdf
   image: alpeware/chrome-headless-trunk
   variables:
-    GIT_SUBMODULE_STRATEGY: none
+    GIT_STRATEGY: none
   script:
+    - mkdir -p public
     - /chrome-linux/chrome --headless --no-sandbox --disable-gpu --print-to-pdf=public/cv.pdf http://site
   services:
     - name: "${REPOSITORY_NGINX_INTERMEDIATE}"
