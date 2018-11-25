@@ -17,15 +17,8 @@ I come to the company to develop and maintain PHP application in the [Azure](htt
 
 Since July 2018 I moved to ASP.NET.
 
-Technology I mastered for production environment:
-- PHP 5.6, then PHP 7.2
-- Doctrine
-- Mariadb
-- NGINX
-- Docker
-- Memcached
-- ASP.NET Core
-- PostgreSQL
+Technology I mastered for production environment:  
+PHP 5.6, then PHP 7.2 - Doctrine - Mariadb - NGINX - Docker - Memcached - ASP.NET Core - PostgreSQL
 
 ###### *March 2016 - March 2017*
 ### Czech Academy of Science - C# Software developer  
