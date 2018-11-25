@@ -53,7 +53,7 @@ I led technical workshops for children. Mainly focused on computers and building
   [Facebook](https://facebook.com/trejjam)    
   [Twitter](https://twitter.com/trejjam)  
   
-  ##### Permanent residence
+##### Permanent residence
   Jan Trejbal  
   Proseč pod Ještědem 52  
   463 43
