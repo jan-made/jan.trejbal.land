@@ -35,6 +35,20 @@ I maintain servers, applications, working stations. I develop small in house app
 
 I led technical workshops for children. Mainly focused on computers and building electrical circuits.
 
+## Education
+
+###### *2012 - 2016*
+### Bachelor of Cybernetics and Robotics
+
+[Faculty of Electrical engineering](https://kyr.fel.cvut.cz), CTU Prague
+
+###### *2007 - 2012*
+### High school diploma in Automation and communication technology
+
+[Střední průmyslová škola strojní a elektrotechnická a Vyšší odborná škola](https://web.pslib.cz/)
+
+### [Scalesoft](http://scalesoft.cz) — Software developer  
+
 {{% /column %}}
 
 {{% column -span-cols-4 -p-left-3 %}}
