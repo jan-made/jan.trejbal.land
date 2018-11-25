@@ -3,6 +3,7 @@ stages:
   - pre-pack
   - generate:pdf
   - pack
+  - deploy
 
 image: docker:stable
 
@@ -75,3 +76,28 @@ pack:
   services:
     - name: docker:stable-dind
       command: ["--experimental"]
+
+deploy:jerry:
+  stage: deploy
+  when: manual
+  dependencies: []
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - mkdir -p ~/.docker
+    - echo "${CI_JOB_TOKEN}" | docker login -u gitlab-ci-token --password-stdin "${CI_REGISTRY}"
+
+    - docker pull "${REPOSITORY_NGINX}"
+    - docker tag "${REPOSITORY_NGINX}" "tremi/trejbal.land/jan:active"
+    - docker rmi "${REPOSITORY_NGINX}"
+
+    - dc-jan-trejbal up -d
+
+    - docker logout "${CI_REGISTRY}"
+  tags:
+    - deploy
+    - jerry
+  only:
+    - master
+  except:
+    - tags
