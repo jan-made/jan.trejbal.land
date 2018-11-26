@@ -15,3 +15,11 @@ body {
 .footer {
     display: none;
 }
+
+h2:nth-of-type(2) {
+    break-before: page;
+}
+
+h4:nth-of-type(5) {
+    break-before: page;
+}
