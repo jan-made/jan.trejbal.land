@@ -18,7 +18,7 @@ if (typeof process.argv[2] !== 'undefined') {
     await page.goto(site, {waitUntil: 'networkidle2'});
 
     await page.pdf({
-        path: 'public/jan.trejbal.pdf',
+        path: 'public/jan-trejbal.pdf',
         format: 'A4'
     });
 
