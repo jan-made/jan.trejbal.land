@@ -47,12 +47,9 @@ pre-pack:
 
 generate:pdf:
   stage: generate:pdf
-  image: alpeware/chrome-headless-trunk
-  variables:
-    GIT_STRATEGY: none
+  image: alekzonder/puppeteer:latest
   script:
-    - mkdir -p public
-    - /chrome-linux/chrome --headless --no-sandbox --disable-gpu --print-to-pdf=public/cv.pdf http://site
+    - node generatepdf.js http://site
   services:
     - name: "${REPOSITORY_NGINX_SITE}"
       alias: site

@@ -2,6 +2,6 @@ ARG NGINX_CONTAINER
 FROM ${NGINX_CONTAINER}
 MAINTAINER Jan Trejbal <jan.trejbal@tremi.cz>
 
-ADD public/cv.pdf /var/www/www/
+ADD public/jan-trejbal.pdf /var/www/www/
 
 RUN	chown www-data:www-data -R /var/www

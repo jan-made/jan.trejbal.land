@@ -1,10 +1,15 @@
 @page {
-    margin: 0;
+    size: A4;
+    margin: 1em 0 2em 0;
 }
 
 body {
     padding: 0 1cm 1cm 1cm;
     font-size: 1.1em;
+}
+
+.main .grid {
+    margin-top: 2em;
 }
 
 .footer {
