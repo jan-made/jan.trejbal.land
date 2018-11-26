@@ -69,19 +69,18 @@ I led technical workshops for children. Mainly focused on computers and building
   - PHP
   - .NET Core
   - Typescript
+  - Python
   - NGINX
+  - SQL
+  - Sass
   - Docker
   - Centos
   - Arch linux
-  - SQL
-  - HTML5
-  - CSS3
-  - SVG
-  - Sass
 
 #### Familiar with
   - Node.js
-  - Hugo.io (Static site generator)
+  - Design PCB
+  - Embedded solutions
 
 #### Interested in
   - Go
