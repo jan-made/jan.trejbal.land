@@ -5,7 +5,7 @@ title: CV
 I am a student of Cybernetics and Robotics at CTU in Prague in a Master programme, I am going to graduate in June 2019.
 
 I like to create software parts which can be open-source; you can find my work on [Github](https://github.com/trejjam).
-For my work I frequently use [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), but recently I have benn working with [ASP.NET Core 2.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1).
+For my work I frequently use [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), but recently I have been working with [ASP.NET Core 2.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1).
 
 {{% grid %}}
 
@@ -25,7 +25,7 @@ PHP 5.6, then PHP 7.2 - Doctrine - Mariadb - NGINX - Docker - Memcached - ASP.NE
 ###### *March 2016 - March 2017*
 ### Czech Academy of Science - C# Software developer  
 
-Participation on development of portal called [RIDICS](http://vokabular.ujc.cas.cz/informace.aspx?t=ovokabulari&o=ovokabulari). My responsibility was data conversion from linguists into the portal supported format.
+Participation on development of portal called [RIDICS](http://vokabular.ujc.cas.cz/informace.aspx?t=ovokabulari&o=ovokabulari). My responsibility was automatic data conversion from linguists into the portal supported format.
 
 ###### *2010 - Present*
 ### [TREMI](http://tremi.cz) - technical support   
@@ -48,8 +48,6 @@ Leadership of technical workshops for children. Mainly focused on computers and 
 ### High school diploma in Automation and Communication technology
 
 [Střední průmyslová škola strojní a elektrotechnická a Vyšší odborná škola](https://web.pslib.cz/)
-
-### [Scalesoft](http://scalesoft.cz) — Software developer  
 
 {{% /column %}}
 
@@ -95,7 +93,7 @@ Leadership of technical workshops for children. Mainly focused on computers and 
   English: adequate    
   Spanish: self learning
 ##### Location:
-  I prefer work in the office in Prague  
+  I prefer work in an office in Prague  
   I can work remotely
 
 ## Hobbies/Interests
