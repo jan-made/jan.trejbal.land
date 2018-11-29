@@ -58,9 +58,10 @@ Leadership of technical workshops for children. Mainly focused on computers and 
   Email: [jan@trejbal.land](mailto:jan@trejbal.land)  
   Tel: [+420 608280353](tel:+420608280353)  
   Website: [jan.trejbal.land](https://jan.trejbal.land)    
-  [GitHub](https://github.com/trejjam)  
-  [Facebook](https://facebook.com/trejjam)    
-  [Twitter](https://twitter.com/trejjam)  
+  GitHub: [trejjam](https://github.com/trejjam)  
+  Facebook: [trejjam](https://facebook.com/trejjam)    
+  Twitter: [@trejjam](https://twitter.com/trejjam)  
+  Datová schránka: xrq568r
   
 ##### Permanent residence
   Jan Trejbal  
