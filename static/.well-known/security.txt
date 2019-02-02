@@ -1,0 +1,4 @@
+Contact: jan+security@trejbal.land
+Encryption: https://jan.trejbal.land/key.asc
+Signature: https://jan.trejbal.land/.well-known/security.txt.sig
+Preferred-Languages: en, cs

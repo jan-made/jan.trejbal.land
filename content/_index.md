@@ -59,7 +59,8 @@ Leadership of technical workshops for children. Mainly focused on computers and 
   GitHub: [trejjam](https://github.com/trejjam)  
   Facebook: [trejjam](https://facebook.com/trejjam)    
   Twitter: [@trejjam](https://twitter.com/trejjam)  
-  Datová schránka: xrq568r
+  Datová schránka: xrq568r  
+  PGP key: [key.asc](https://jan.trejbal.land/key.asc)  
   
 ##### Permanent residence
   Jan Trejbal  
