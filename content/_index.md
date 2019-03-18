@@ -58,10 +58,11 @@ Leadership of technical workshops for children. Mainly focused on computers and 
   Website: [jan.trejbal.land](https://jan.trejbal.land)    
   GitHub: [trejjam](https://github.com/trejjam)  
   Facebook: [trejjam](https://facebook.com/trejjam)    
-  Twitter: [@trejjam](https://twitter.com/trejjam)  
+  Twitter: [@trejjam](https://twitter.com/trejjam)
+  IČ: [07992297](https://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=07992297&jazyk=cz&xml=1)  
   Datová schránka: xrq568r  
   PGP key: [key.asc](https://jan.trejbal.land/key.asc)  
-  
+
 ##### Permanent residence
   Jan Trejbal  
   Proseč pod Ještědem 52  
