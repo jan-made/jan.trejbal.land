@@ -63,9 +63,10 @@ Leadership of technical workshops for children. Mainly focused on computers and 
   PGP key: [key.asc](https://jan.trejbal.land/key.asc)  
 
 ##### Business and Billing Information 
-  IČ: [07992297](https://wwwinfo.mfcr.cz/cgi-bin/ares/sh_reg.cgi?ico=07992297&jazyk=cz)   
+  Email: [contact@jantrejbal.cz](mailto:contact@jantrejbal.cz)    
+  IČ: [07992297](https://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=07992297&xml=1&jazyk=cz)
   Datová schránka: 2g7yy2m    
-  Bank account: 1370959002 / 5500 (Raiffeisenbank)    
+  Bank account: 1370959002/5500 (Raiffeisenbank)    
   IBAN: CZ3955000000001370959002    
   SWIFT: RZBCCZPP
 
