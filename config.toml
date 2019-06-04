@@ -7,6 +7,10 @@ enableRobotsTXT = true
 
 disableKinds = ["RSS"]
 defaultContentLanguage = "en"
+
+[blackfriday]
+    fractions = false
+
 [taxonomies]
 
 [author]
