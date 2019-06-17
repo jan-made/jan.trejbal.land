@@ -2,10 +2,8 @@
 title: CV
 ---
 # Jan Trejbal
-I am a student of Cybernetics and Robotics at CTU in Prague in a Master programme, I am going to graduate in June 2019.
-
-I like to create software parts which can be open-source; you can find my work on [Github](https://github.com/trejjam).
-For my work I frequently use [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), but recently I have been working with [ASP.NET Core 2.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1).
+I love to create open software; you can find my work on [Github](https://github.com/trejjam).
+For my work, I frequently use the [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), with the help of the [Symfony](https://symfony.com/) framework, but recently I transfer to [ASP.NET Core 2.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1).
 
 {{% grid %}}
 
@@ -17,7 +15,7 @@ For my work I frequently use [Nette Framework](https://nette.org/) on [PHP 7.2](
 My main responsibility has been to develop and maintain PHP application in the [Azure](https://azure.microsoft.com/). 
 I have designed whole scalable runtime and CI/CD process on top of the [Docker](https://docker.com) technology.
 
-Migration to ASP.NET in July 2018.
+I changed course to ASP.NET in July 2018. My responsibility is to maintain authorization against external identity providers and general backed development. 
 
 Technology I mastered for production environment:  
 PHP 5.6, then PHP 7.2 - Doctrine - Mariadb - NGINX - Docker - Memcached - ASP.NET Core - PostgreSQL
@@ -30,7 +28,7 @@ Participation on development of portal called [RIDICS](http://vokabular.ujc.cas.
 ###### *2010 - Present*
 ### [TREMI](http://tremi.cz) - technical support   
 
-Maintenance of servers, applications, working stations. Development of small in house applications.
+Maintenance of servers, applications, working stations. Development of a small in house applications.
 
 ###### *2008 - 2016*
 ### [Dům dětí a mládeže](https://www.ddmliberec.cz/) - lecturer   
@@ -38,6 +36,13 @@ Maintenance of servers, applications, working stations. Development of small in 
 Leadership of technical workshops for children. Mainly focused on computers and building electrical circuits.
 
 ## Education
+
+###### *2015 - 2019*
+### Engineer of Cybernetics and Robotics
+
+My master's thesis is about developing an embedded position sensor with a high density of used items. The firmware is written in C, and high-level data visualization counterpart is written in Golang.  
+
+[Faculty of Electrical engineering](https://kyr.fel.cvut.cz), CTU Prague
 
 ###### *2012 - 2015*
 ### Bachelor of Cybernetics and Robotics
@@ -77,8 +82,9 @@ Leadership of technical workshops for children. Mainly focused on computers and 
   463 43
 
 #### Fluent with
-  - PHP
   - .NET Core
+  - Golang
+  - PHP
   - Typescript
   - Python
   - NGINX
@@ -94,7 +100,6 @@ Leadership of technical workshops for children. Mainly focused on computers and 
   - Embedded solutions
 
 #### Interested in
-  - Go
   - Kotlin
 
 #### Other Info
@@ -107,7 +112,7 @@ Leadership of technical workshops for children. Mainly focused on computers and 
   I can work remotely
 
 ## Hobbies/Interests
-Argentine tango; attended [the first tango flashmob in Prague](https://www.youtube.com/watch?v=yK91kXee3wU).  
+Argentine tango; attended [the first tango flashmob in Prague](https://www.youtube.com/watch?v=yK91kXee3wU), part-time teacher.  
 Skiing, wakeboarding, kiting and yachting.
 
 {{% /column %}}
