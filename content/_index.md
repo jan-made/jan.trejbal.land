@@ -3,19 +3,19 @@ title: CV
 ---
 # Jan Trejbal
 I love to create open software; you can find my work on [Github](https://github.com/trejjam).
-For my work, I frequently use the [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), with the help of the [Symfony](https://symfony.com/) framework, but recently I transfer to [ASP.NET Core 2.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1).
+For my work, I frequently use the [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), with the help of the [Symfony](https://symfony.com/) framework, but I transferred to [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.0).
 
 {{% grid %}}
 
 {{% column -span-cols-6 -m-right-2 %}}
 ## Professional Experience
-###### *March 2017 - Present*
+###### *March 2017 - November 2019*
 ### [Scalesoft](http://scalesoft.cz) — Software developer  
 
 My main responsibility has been to develop and maintain PHP application in the [Azure](https://azure.microsoft.com/). 
 I have designed whole scalable runtime and CI/CD process on top of the [Docker](https://docker.com) technology.
 
-I changed course to ASP.NET in July 2018. My responsibility is to maintain authorization against external identity providers and general backed development. 
+I changed course to ASP.NET in July 2018. My responsibility is to maintain authorization against external identity providers, communication with external services mainly with government services [ISZR](https://www.szrcr.cz/cs/informacni-system-zakladnich-registru), and general backed development. 
 
 Technology I mastered for production environment:  
 PHP 5.6, then PHP 7.2 - Doctrine - Mariadb - NGINX - Docker - Memcached - ASP.NET Core - PostgreSQL
