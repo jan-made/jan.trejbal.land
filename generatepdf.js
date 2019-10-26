@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 var site = 'https://jan.trejbal.land';
 if (typeof process.argv[2] !== 'undefined') {
@@ -6,6 +7,10 @@ if (typeof process.argv[2] !== 'undefined') {
 }
 
 (async () => {
+    await fs.mkdir('public', {recursive: true}, (err) => {
+        if (err) console.error(err);
+    });
+
     const browser = await puppeteer.launch({
         args: [
             '--no-sandbox',
