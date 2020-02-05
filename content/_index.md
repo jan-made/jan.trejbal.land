@@ -3,13 +3,18 @@ title: CV
 ---
 # Jan Trejbal
 I love to create open software; you can find my work on [Github](https://github.com/trejjam).
-For my work, I frequently use the [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), with the help of the [Symfony](https://symfony.com/) framework, but I transferred to [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.0).
+For my work, I frequently used the [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), with the help of the [Symfony](https://symfony.com/) framework, but I transferred to [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1).
 
 {{% grid %}}
 
 {{% column -span-cols-6 -m-right-2 %}}
 ## Professional Experience
-###### *March 2017 - November 2019*
+###### *November 2019—Present*
+## [Aviationexam](https://www.aviationexam.com/) — Software developer
+
+I am developing containerized microservice written in the ASP.NET Core 3.1. They support the needs of React web interface, Android, or iOS application.
+
+###### *March 2017—November 2019*
 ### [Scalesoft](http://scalesoft.cz) — Software developer  
 
 My main responsibility has been to develop and maintain PHP application in the [Azure](https://azure.microsoft.com/). 
@@ -20,36 +25,36 @@ I changed course to ASP.NET in July 2018. My responsibility is to maintain autho
 Technology I mastered for production environment:  
 PHP 5.6, then PHP 7.2 - Doctrine - Mariadb - NGINX - Docker - Memcached - ASP.NET Core - PostgreSQL
 
-###### *March 2016 - March 2017*
+###### *March 2016—March 2017*
 ### Czech Academy of Science - C# Software developer  
 
 Participation on development of portal called [RIDICS](http://vokabular.ujc.cas.cz/informace.aspx?t=ovokabulari&o=ovokabulari). My responsibility was automatic data conversion from linguists into the portal supported format.
 
-###### *2010 - Present*
+###### *2010—Present*
 ### [TREMI](http://tremi.cz) - technical support   
 
 Maintenance of servers, applications, working stations. Development of a small in house applications.
 
-###### *2008 - 2016*
+###### *2008—2016*
 ### [Dům dětí a mládeže](https://www.ddmliberec.cz/) - lecturer   
 
 Leadership of technical workshops for children. Mainly focused on computers and building electrical circuits.
 
 ## Education
 
-###### *2015 - 2019*
+###### *2015—2019*
 ### Engineer of Cybernetics and Robotics
 
 My master's thesis is about developing an embedded position sensor with a high density of used items. The firmware is written in C, and high-level data visualization counterpart is written in Golang.  
 
 [Faculty of Electrical engineering](https://kyr.fel.cvut.cz), CTU Prague
 
-###### *2012 - 2015*
+###### *2012—2015*
 ### Bachelor of Cybernetics and Robotics
 
 [Faculty of Electrical engineering](https://kyr.fel.cvut.cz), CTU Prague
 
-###### *2007 - 2012*
+###### *2007—2012*
 ### High school diploma in Automation and Communication technology
 
 [Střední průmyslová škola strojní a elektrotechnická a Vyšší odborná škola](https://web.pslib.cz/)
