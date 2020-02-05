@@ -1,9 +1,14 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
-var site = 'https://jan.trejbal.land';
+let site = 'https://jan.trejbal.land';
 if (typeof process.argv[2] !== 'undefined') {
     site = process.argv[2];
+}
+
+let outputFile = 'jan-trejbal.pdf';
+if (typeof process.argv[3] !== 'undefined') {
+    outputFile = process.argv[3];
 }
 
 (async () => {
@@ -23,7 +28,7 @@ if (typeof process.argv[2] !== 'undefined') {
     await page.goto(site, {waitUntil: 'networkidle2'});
 
     await page.pdf({
-        path: 'public/jan-trejbal.pdf',
+        path: `public/${outputFile}`,
         format: 'A4'
     });
 
