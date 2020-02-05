@@ -37,6 +37,7 @@ pre-pack:
     - echo "${CI_JOB_TOKEN}" | docker login -u gitlab-ci-token --password-stdin "${CI_REGISTRY}"
     - docker pull "${NGINX_CONTAINER}"
 
+    - touch public/jan-trejbal.pdf
     - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX_INTERMEDIATE}" -f docker/Dockerfile .
     - docker push "${REPOSITORY_NGINX_INTERMEDIATE}"
 
