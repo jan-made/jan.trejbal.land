@@ -8,6 +8,9 @@ enableRobotsTXT = true
 disableKinds = ["RSS"]
 defaultContentLanguage = "en"
 
+[markup.goldmark.renderer]
+    unsafe= true
+
 [blackfriday]
     fractions = false
 

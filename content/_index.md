@@ -10,7 +10,7 @@ For my work, I frequently used the [Nette Framework](https://nette.org/) on [PHP
 {{% column -span-cols-6 -m-right-2 %}}
 ## Professional Experience
 ###### *November 2019—Present*
-## [Aviationexam](https://www.aviationexam.com/) — Software developer
+### [Aviationexam](https://www.aviationexam.com/) — Software developer
 
 I am developing containerized microservice written in the ASP.NET Core 3.1. They support the needs of React web interface, Android, or iOS application.
 
@@ -86,26 +86,14 @@ My master's thesis is about developing an embedded position sensor with a high d
   Proseč pod Ještědem 52  
   463 43
 
-#### Fluent with
-  - .NET Core
-  - Golang
-  - PHP
-  - Typescript
-  - Python
-  - NGINX
-  - SQL
-  - Sass
-  - Docker
-  - Centos
-  - Arch linux
+#### Technology used on daily basis
+  .NET Core, Golang, PHP, Typescript, Python, NGINX, SQL, Sass, Docker, Centos, Arch linux
 
 #### Familiar with
-  - Node.js
-  - Design PCB
-  - Embedded solutions
+  Node.js, Design PCB, Embedded solutions
 
 #### Interested in
-  - Kotlin
+  Kotlin
 
 #### Other Info
 ##### Language:
