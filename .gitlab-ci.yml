@@ -51,6 +51,7 @@ generate:pdf:
   stage: generate:pdf
   image: alekzonder/puppeteer:latest
   script:
+    - mkdir public
     - touch public/jan-trejbal.pdf
     - node generatepdf.js http://site
   services:
