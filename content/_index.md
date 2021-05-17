@@ -3,16 +3,21 @@ title: CV
 ---
 # Jan Trejbal
 I love to create open software; you can find my work on [Github](https://github.com/trejjam).
-For my work, I frequently used the [Nette Framework](https://nette.org/) on [PHP 7.2](http://php.net/supported-versions.php), with the help of the [Symfony](https://symfony.com/) framework, but I transferred to [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1).
+For my work, I frequently used the [Nette Framework](https://nette.org/), but I transferred to [.NET](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-5.0) in June 2019.
 
 {{% grid %}}
 
 {{% column -span-cols-6 -m-right-2 %}}
 ## Professional Experience
 ###### *November 2019—Present*
-### [Aviationexam](https://www.aviationexam.com/) — Software developer
+### [Aviationexam](https://www.aviationexam.com/) — Software developer with a whit of ops
 
-I am developing containerized microservice written in the ASP.NET Core 3.1. They support the needs of React web interface, Android, or iOS application.
+I am developing containerized microservice written in the .NET 5. They support the needs of React web interface, Android, and iOS application.
+
+###### *June 2019—Present*
+### [Studio 12](http://studio12.cz/team.html) — Tango Argentino lecturer
+
+When I am not next to my computers keyboard I am usually dancing or helping others with their dance.
 
 ###### *March 2017—November 2019*
 ### [Scalesoft](http://scalesoft.cz) — Software developer  
@@ -92,16 +97,13 @@ My master's thesis is about developing an embedded position sensor with a high d
 #### Familiar with
   Node.js, Design PCB, Embedded solutions
 
-#### Interested in
-  Kotlin
-
 #### Other Info
 ##### Language:
   Czech: native  
   English: adequate    
   Spanish: self learning
 ##### Location:
-  I prefer work in an office in Prague  
+  I prefer to work in an office in Prague  
   I can work remotely
 
 ## Hobbies/Interests
