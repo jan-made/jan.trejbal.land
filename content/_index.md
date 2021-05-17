@@ -17,7 +17,7 @@ I am developing containerized microservice written in the .NET 5. They support t
 ###### *June 2019—Present*
 ### [Studio 12](http://studio12.cz/team.html) — Tango Argentino lecturer
 
-When I am not next to my computers keyboard I am usually dancing or helping others with their dance.
+When I am not next to my computer's keyboard I am usually dancing or helping others with their dance.
 
 ###### *March 2017—November 2019*
 ### [Scalesoft](http://scalesoft.cz) — Software developer  
