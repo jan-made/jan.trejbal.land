@@ -78,7 +78,7 @@ pack:
 
 deploy:jerry:
   stage: deploy
-  #when: manual
+  when: manual
   dependencies: []
   variables:
     GIT_STRATEGY: none
