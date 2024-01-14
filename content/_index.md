@@ -78,20 +78,22 @@ My master's thesis is about developing an embedded position sensor with a high d
   PGP key: [key.asc](https://jan.trejbal.land/key.asc)  
 
 ##### Business and Billing Information 
-  Email: [contact@jantrejbal.cz](mailto:contact@jantrejbal.cz)
-  SIREN: [981729262](https://data.inpi.fr/search?q=981729262)    
-  Intra-Community TVA: --in-process--     
-  IBAN: FR76 1313 5000 8008 0091 4460 178    
-  SWIFT: CEPAFRPP313    
+  Email:&nbsp;[contact@jantrejbal.cz](mailto:contact@jantrejbal.cz)
+  <br>SIREN:&nbsp;[981729262](https://data.inpi.fr/search?q=981729262)    
+  <br>Intra-Community TVA: --in-process--     
+  <br>IBAN:&nbsp;FR76&nbsp;1313&nbsp;5000&nbsp;8008&nbsp;0091&nbsp;4460&nbsp;178    
+  <br>SWIFT:&nbsp;CEPAFRPP313    
 
 <details>
   <summary>Legacy Czech information</summary>
-  IČ: [07992297](https://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=07992297&xml=1&jazyk=cz)    
-  Datová schránka: 2g7yy2m    
-  Bank account: 1370959002/5500    
-  Bank: Raiffeisenbank a.s.    
-  IBAN: CZ3955000000001370959002    
-  SWIFT: RZBCCZPP
+  <p>
+    IČ:&nbsp;<a href="https://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=07992297&xml=1&jazyk=cz">07992297</a>    
+    <br>Datová&nbsp;schránka:&nbsp;2g7yy2m    
+    <br>Bank&nbsp;account:&nbsp;1370959002/5500    
+    <br>Bank:&nbsp;Raiffeisenbank a.s.    
+    <br>IBAN:&nbsp;CZ3955000000001370959002    
+    <br>SWIFT:&nbsp;RZBCCZPP
+  </p>
 </details>
 
 ##### Permanent residence
