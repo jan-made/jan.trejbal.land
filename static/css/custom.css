@@ -1,0 +1,63 @@
+:root{
+    /* colours (main HSL values) */
+    --core-secondary: 148, 40%;
+    --core-primary: 192, 56%;
+    --core-highlight: 350, 98%;
+
+    --bookweight: 500;
+    --heavyweight: 600;
+    --boldweight: 700;
+    --extraboldweight: 800;
+
+    /* Font size helpers */
+    --rem-075: 11.2px;
+    --rem-075: 0.7rem;
+    --rem-07: 11.2px;
+    --rem-07: 0.7rem;
+    --rem-06: 9.6px;
+    --rem-06: 0.6rem;
+
+    --core-black:           0, 0%;
+    --black:                hsl( var(--core-black),     0%   );
+
+    --spacing: 15px;
+    --spacing: 0.9375rem;
+}
+
+details {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+details summary {
+    margin-top: 1.6em;
+    margin-bottom: 0.1em;
+    font-size: inherit;
+}
+
+details summary{
+    font-weight: var(--boldweight);
+    color: var(--black);
+    margin-bottom: var(--spacing);
+}
+
+details{
+    margin: var(--spacing) 0;
+}
+
+
+details summary{
+    font-size: var(--rem-07);
+}
+
+details{
+    font-family: var(--sans);
+    font-weight: var(--bookweight);
+}
+
+.main details{
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    font-size: 0.8em;
+}

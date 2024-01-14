@@ -20,10 +20,12 @@
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
       <link href='{{ "css/belmu.min.css" | absURL }}?{{ now.UnixNano }}' rel='stylesheet' type="text/css" />
       <link href='{{ "css/main.min.css" | absURL }}?{{ now.UnixNano }}' rel='stylesheet' type="text/css" />
+      <link href='{{ "css/custom.min.css" | absURL }}?{{ now.UnixNano }}' rel='stylesheet' type="text/css" />
       <link href='{{ "css/print.css" | absURL }}?{{ now.UnixNano }}' rel='stylesheet' type="text/css" media="print" />
     {{ else }}
       <link href='{{ "css/belmu.css" | absURL }}?{{ now.UnixNano }}' rel='stylesheet' type="text/css" />
       <link href='{{ "css/main.css" | absURL }}?{{ now.UnixNano }}' rel='stylesheet' type="text/css" />
+      <link href='{{ "css/custom.css" | absURL }}?{{ now.UnixNano }}' rel='stylesheet' type="text/css" />
       <link href='{{ "css/print.css" | absURL }}?{{ now.UnixNano }}' rel='stylesheet' type="text/css" media="print" />
     {{ end }}
 
