@@ -79,10 +79,10 @@ My master's thesis is about developing an embedded position sensor with a high d
 
 ##### Business and Billing Information 
   Email:&nbsp;[contact@jantrejbal.cz](mailto:contact@jantrejbal.cz)
-  <br>SIREN:&nbsp;[981729262](https://data.inpi.fr/search?q=981729262)    
-  <br>Intra-Community TVA: --in-process--     
-  <br>IBAN:&nbsp;FR76&nbsp;1313&nbsp;5000&nbsp;8008&nbsp;0091&nbsp;4460&nbsp;178    
-  <br>SWIFT:&nbsp;CEPAFRPP313    
+  <br>SIREN:&nbsp;[981729262](https://data.inpi.fr/search?q=981729262)
+  <br>Intra-Community TVA: --in-process--
+  <br>IBAN:&nbsp;FR76&nbsp;1313&nbsp;5000&nbsp;8008&nbsp;0091&nbsp;4460&nbsp;178
+  <br>SWIFT:&nbsp;CEPAFRPP313
 
 <details>
   <summary>Legacy Czech information</summary>
