@@ -12,7 +12,7 @@ For my work, I frequently used the [Nette Framework](https://nette.org/), but I 
 ###### *November 2019—Present*
 ### [Aviationexam](https://www.aviationexam.com/) — Software developer with a whit of ops
 
-I am developing containerized microservice written in the .NET 5. They support the needs of React web interface, Android, and iOS application.
+I am developing containerized microservice written in the .NET 7. They support the needs of React web interface, Android, and iOS application.
 
 ###### *June 2019—Present*
 ### [Studio 12](http://studio12.cz/team.html) — Tango Argentino lecturer
@@ -78,18 +78,24 @@ My master's thesis is about developing an embedded position sensor with a high d
   PGP key: [key.asc](https://jan.trejbal.land/key.asc)  
 
 ##### Business and Billing Information 
-  Email: [contact@jantrejbal.cz](mailto:contact@jantrejbal.cz)    
+  Email: [contact@jantrejbal.cz](mailto:contact@jantrejbal.cz)
+  SIRET: 98172926200015
+  Intra-Community TVA: --in-process-- 
+  IBAN: FR76 1313 5000 8008 0091 4460 178
+  SWIFT: CEPAFRPP313
+
+  Legacy Czech information:
   IČ: [07992297](https://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=07992297&xml=1&jazyk=cz)    
-  Datová schránka: 2g7yy2m    
-  Bank account: 1370959002/5500    
-  Bank: Raiffeisenbank a.s.    
-  IBAN: CZ3955000000001370959002    
+  Datová schránka: 2g7yy2m
+  Bank account: 1370959002/5500
+  Bank: Raiffeisenbank a.s.
+  IBAN: CZ3955000000001370959002
   SWIFT: RZBCCZPP
 
 ##### Permanent residence
-  Jan Trejbal  
-  Proseč pod Ještědem 52  
-  463 43
+  Ing. Jan Trejbal  
+  3 Impasse Théodore Sudre  
+  31100 Toulouse
 
 #### Technology used on daily basis
   .NET Core, Golang, PHP, Typescript, Python, NGINX, SQL, Sass, Docker, Centos, Arch linux
@@ -100,11 +106,10 @@ My master's thesis is about developing an embedded position sensor with a high d
 #### Other Info
 ##### Language:
   Czech: native  
-  English: adequate    
-  Spanish: self learning
-##### Location:
-  I prefer to work in an office in Prague  
-  I can work remotely
+  English: B2+
+  French: beginner
+##### Location: 
+  I work remotely, currently from Toulouse
 
 ## Hobbies/Interests
 Argentine tango; attended [the first tango flashmob in Prague](https://www.youtube.com/watch?v=yK91kXee3wU), part-time teacher.  
