@@ -88,7 +88,7 @@ My master's thesis is about developing an embedded position sensor with a high d
 <details>
   <summary>Legacy Czech information</summary>
   <p>
-    IČ:&nbsp;<a href="https://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=07992297&xml=1&jazyk=cz">07992297</a>    
+    IČ:&nbsp;<a href="https://ares.gov.cz/ekonomicke-subjekty?ico=07992297">07992297</a>    
     <br>Datová&nbsp;schránka:&nbsp;2g7yy2m    
     <br>Bank&nbsp;account:&nbsp;1370959002/5500    
     <br>Bank:&nbsp;Raiffeisenbank a.s.    
