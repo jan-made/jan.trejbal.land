@@ -5,7 +5,7 @@ stages:
   - pack
   - deploy
 
-image: docker:stable
+image: docker:$ENV_DOCKER_VERSION
 
 variables:
   REPOSITORY_NGINX_INTERMEDIATE: "${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_SLUG}:intermediate-${CI_COMMIT_SHA}"
