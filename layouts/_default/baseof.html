@@ -34,7 +34,7 @@
     {{ end }}
 
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-      {{ template "_internal/google_analytics_async.html" . }}
+      {{ template "_internal/google_analytics.html" . }}
     {{ end }}
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i,600,900" rel="stylesheet">
   </head>
