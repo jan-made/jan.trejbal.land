@@ -44,8 +44,9 @@ pre-pack:
     - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${NGINX_CONTAINER}" -t "${REPOSITORY_NGINX_SITE}" -f docker/DockerfileSite .
     - docker push "${REPOSITORY_NGINX_SITE}"
   services:
-  - name: docker:stable-dind
-    command: ["--experimental"]
+    - name: "docker:${ENV_DOCKER_VERSION}-dind"
+      command: ["--experimental"]
+
 
 generate:pdf:
   stage: generate:pdf
@@ -73,8 +74,9 @@ pack:
     - docker build ${DOCKER_BUILD_ARG} --build-arg "NGINX_CONTAINER=${REPOSITORY_NGINX_INTERMEDIATE}" -t "${REPOSITORY_NGINX}" -f docker/DockerfilePack .
     - docker push "${REPOSITORY_NGINX}"
   services:
-    - name: docker:stable-dind
+    - name: "docker:${ENV_DOCKER_VERSION}-dind"
       command: ["--experimental"]
+
 
 deploy:jerry:
   stage: deploy
