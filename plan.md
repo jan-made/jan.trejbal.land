@@ -213,4 +213,33 @@ bun run build
 
 # Preview production build
 bun run preview
+
+# Generate PDF (requires preview server running)
+bun run generate:pdf http://localhost:4321 jan-trejbal.pdf dist/
+
+# Build everything including PDF
+bun run build:pdf
 ```
+
+## CI/CD (GitHub Actions)
+
+Workflow file: `.github/workflows/build-and-deploy.yml`
+
+### Pipeline Stages:
+1. **build** - Builds Astro site to `dist/`
+2. **generate-pdf** - Serves built site, generates PDF with Puppeteer
+3. **deploy** - Deploys to GitHub Pages (only on push to main/master)
+
+### Triggers:
+- Push to `main` or `master` branch
+- Pull requests to `main` or `master`
+- Manual workflow dispatch
+
+### Artifacts:
+- `astro-dist` - Built site without PDF
+- `site-with-pdf` - Built site with generated PDF
+
+### PDF Generation:
+- Uses Puppeteer with headless Chrome
+- Generates A4 format PDF
+- Output: `dist/jan-trejbal.pdf`
