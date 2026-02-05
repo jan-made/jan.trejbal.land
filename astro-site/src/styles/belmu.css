@@ -2124,53 +2124,53 @@ All Utility classes go here.
   left: 0;
 }
 
-.-top-half: calc(var(--spacing) * 0.5);
+.-top-half { top: calc(var(--spacing) * 0.5); }
 
-.-top-1: calc(var(--spacing) * 1);
+.-top-1 { top: calc(var(--spacing) * 1); }
 
-.-top-2: calc(var(--spacing) * 2);
+.-top-2 { top: calc(var(--spacing) * 2); }
 
-.-top-3: calc(var(--spacing) * 3);
+.-top-3 { top: calc(var(--spacing) * 3); }
 
-.-top-4: calc(var(--spacing) * 4);
+.-top-4 { top: calc(var(--spacing) * 4); }
 
-.-top-5: calc(var(--spacing) * 5);
+.-top-5 { top: calc(var(--spacing) * 5); }
 
-.-right-half: calc(var(--spacing) * 0.5);
+.-right-half { right: calc(var(--spacing) * 0.5); }
 
-.-right-1: calc(var(--spacing) * 1);
+.-right-1 { right: calc(var(--spacing) * 1); }
 
-.-right-2: calc(var(--spacing) * 2);
+.-right-2 { right: calc(var(--spacing) * 2); }
 
-.-right-3: calc(var(--spacing) * 3);
+.-right-3 { right: calc(var(--spacing) * 3); }
 
-.-right-4: calc(var(--spacing) * 4);
+.-right-4 { right: calc(var(--spacing) * 4); }
 
-.-right-5: calc(var(--spacing) * 5);
+.-right-5 { right: calc(var(--spacing) * 5); }
 
-.-bottom-half: calc(var(--spacing) * 0.5);
+.-bottom-half { bottom: calc(var(--spacing) * 0.5); }
 
-.-bottom-1: calc(var(--spacing) * 1);
+.-bottom-1 { bottom: calc(var(--spacing) * 1); }
 
-.-bottom-2: calc(var(--spacing) * 2);
+.-bottom-2 { bottom: calc(var(--spacing) * 2); }
 
-.-bottom-3: calc(var(--spacing) * 3);
+.-bottom-3 { bottom: calc(var(--spacing) * 3); }
 
-.-bottom-4: calc(var(--spacing) * 4);
+.-bottom-4 { bottom: calc(var(--spacing) * 4); }
 
-.-bottom-5: calc(var(--spacing) * 5);
+.-bottom-5 { bottom: calc(var(--spacing) * 5); }
 
-.-left-half: calc(var(--spacing) * 0.5);
+.-left-half { left: calc(var(--spacing) * 0.5); }
 
-.-left-1: calc(var(--spacing) * 1);
+.-left-1 { left: calc(var(--spacing) * 1); }
 
-.-left-2: calc(var(--spacing) * 2);
+.-left-2 { left: calc(var(--spacing) * 2); }
 
-.-left-3: calc(var(--spacing) * 3);
+.-left-3 { left: calc(var(--spacing) * 3); }
 
-.-left-4: calc(var(--spacing) * 4);
+.-left-4 { left: calc(var(--spacing) * 4); }
 
-.-left-5: calc(var(--spacing) * 5);
+.-left-5 { left: calc(var(--spacing) * 5); }
 
 /* -- Spacing
    –––––––––– */
