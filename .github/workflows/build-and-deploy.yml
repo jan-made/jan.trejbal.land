@@ -55,7 +55,7 @@ jobs:
           bun-version: latest
 
       - name: Download build artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: astro-dist
           path: dist/
@@ -121,7 +121,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Download site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: site-with-pdf
           path: dist/
