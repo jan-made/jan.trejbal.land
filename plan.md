@@ -178,6 +178,7 @@ h4:nth-of-type(5) { break-before: page; }
 - Static build produces single index.html + assets
 - Dev server working at localhost:4321
 - CSS warnings about `.-top-half` in belmu.css (line 2126) - non-critical, malformed CSS in original
+ - Print stylesheet now loaded as `@import ... print` to match Hugo (prevents screen font-size/container changes)
 
 ### CSS Loading Order (Important)
 1. Google Fonts (Montserrat, Fira Sans)
