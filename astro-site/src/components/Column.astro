@@ -1,0 +1,12 @@
+---
+// Column component - creates a column with dynamic CSS classes
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<div class={`col ${className}`}>
+  <slot />
+</div>

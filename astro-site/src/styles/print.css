@@ -1,0 +1,25 @@
+@page {
+    size: A4;
+    margin: 1em 0 2em 0;
+}
+
+body {
+    padding: 0 1cm 1cm 1cm;
+    font-size: 0.9em;
+}
+
+.main .grid {
+    margin-top: 2em;
+}
+
+.footer {
+    display: none;
+}
+
+h2:nth-of-type(2) {
+    break-before: page;
+}
+
+h4:nth-of-type(5) {
+    break-before: page;
+}
