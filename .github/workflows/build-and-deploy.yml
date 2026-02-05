@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-2vcpu-ubuntu-2404
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,9 +40,10 @@ jobs:
           name: astro-dist
           path: dist/
           retention-days: 1
+          include-hidden-files: true
 
   generate-pdf:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-2vcpu-ubuntu-2404
     needs: build
     steps:
       - name: Checkout
@@ -109,9 +110,10 @@ jobs:
           name: site-with-pdf
           path: dist/
           retention-days: 1
+          include-hidden-files: true
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-2vcpu-ubuntu-2404
     needs: generate-pdf
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     environment:
