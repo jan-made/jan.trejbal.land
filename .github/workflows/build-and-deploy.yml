@@ -35,7 +35,7 @@ jobs:
         run: bun run build
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: astro-dist
           path: dist/
@@ -105,7 +105,7 @@ jobs:
           kill $SERVER_PID 2>/dev/null || true
 
       - name: Upload dist with PDF
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: site-with-pdf
           path: dist/
