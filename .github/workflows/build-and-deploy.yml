@@ -12,10 +12,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   build:
     runs-on: blacksmith-2vcpu-ubuntu-2404
@@ -114,6 +110,9 @@ jobs:
 
   deploy:
     runs-on: blacksmith-2vcpu-ubuntu-2404
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
     needs: generate-pdf
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     environment:
