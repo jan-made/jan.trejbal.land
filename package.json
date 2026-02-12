@@ -12,7 +12,7 @@
     "build:pdf": "bun run build && bun run preview & sleep 3 && bun run generate:pdf http://localhost:4321 jan-trejbal.pdf && pkill -f 'astro preview' || true"
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "astro": "^5.17.2"
   },
   "devDependencies": {
     "puppeteer": "^24.37.2"
