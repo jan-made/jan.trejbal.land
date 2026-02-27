@@ -31,7 +31,7 @@ jobs:
         run: bun run build
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: astro-dist
           path: dist/
@@ -101,7 +101,7 @@ jobs:
           kill $SERVER_PID 2>/dev/null || true
 
       - name: Upload dist with PDF
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: site-with-pdf
           path: dist/
@@ -132,7 +132,7 @@ jobs:
         run: tar --dereference --hard-dereference --directory dist -cvf "$RUNNER_TEMP/artifact.tar" .
 
       - name: Upload Pages artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: github-pages
           path: ${{ runner.temp }}/artifact.tar
