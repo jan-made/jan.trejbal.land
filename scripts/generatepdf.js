@@ -34,9 +34,9 @@ async function generatePdf() {
     format: 'A4',
     printBackground: true,
     margin: {
-      top: '1cm',
+      top: '0',
       right: '0',
-      bottom: '2cm',
+      bottom: '0',
       left: '0',
     },
   });
