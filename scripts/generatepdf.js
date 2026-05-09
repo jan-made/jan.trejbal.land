@@ -12,7 +12,7 @@ const outputDir = process.argv[4] || join(__dirname, '..', 'dist');
 
 async function generatePdf() {
   console.log(`Generating PDF from ${site}...`);
-  
+
   await mkdir(outputDir, { recursive: true });
 
   const browser = await puppeteer.launch({
@@ -34,9 +34,9 @@ async function generatePdf() {
     format: 'A4',
     printBackground: true,
     margin: {
-      top: '0',
+      top: '1cm',
       right: '0',
-      bottom: '0',
+      bottom: '1cm',
       left: '0',
     },
   });
