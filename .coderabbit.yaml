@@ -37,7 +37,6 @@ reviews:
     - "!bun.lock"
     - "!dist/**"
     - "!**/*.png"
-    - "!public/**/*.sig"
   path_instructions:
     - path: "src/**/*.astro"
       instructions: >-
@@ -47,7 +46,7 @@ reviews:
         Check that changes to print.css keep the generated PDF CV on clean pages, and that screen styles do not break the print layout.
     - path: "public/.well-known/**"
       instructions: >-
-        security.txt is signed by security.txt.sig; flag edits to security.txt that do not update the signature and an Expires date in the past.
+        security.txt is signed by security.txt.sig. Flag an edit to security.txt that does not also update the detached signature, and flag an Expires field that is missing, appears more than once, is not well-formed or does not lie in the future.
     - path: ".github/workflows/**"
       instructions: >-
         Check that deploy secrets are not echoed and that actions are pinned.
