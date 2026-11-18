@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+# CodeRabbit PR review settings for the jan.trejbal.land Astro site. AGENTS.md is read as the coding guidelines.
+language: en-US
+reviews:
+  profile: chill
+  high_level_summary: true
+  poem: false
+  in_progress_fortune: false
+  sequence_diagrams: false
+  review_status: true
+  collapse_walkthrough: true
+  enable_prompt_for_ai_agents: true
+  abort_on_close: true
+  auto_review:
+    enabled: true
+    drafts: true
+    auto_incremental_review: true
+    ignore_usernames:
+      - dependabot[bot]
+  finishing_touches:
+    autofix:
+      enabled: true
+    fix_ci:
+      enabled: true
+    resolve_merge_conflict:
+      enabled: true
+    unit_tests:
+      enabled: true
+    simplify:
+      enabled: true
+  pre_merge_checks:
+    title:
+      mode: warning
+    description:
+      mode: warning
+  path_filters:
+    - "!bun.lock"
+    - "!dist/**"
+    - "!**/*.png"
+    - "!public/**/*.sig"
+  path_instructions:
+    - path: "src/**/*.astro"
+      instructions: >-
+        Static Astro CV site. Check semantic HTML, accessibility (alt text, heading order, link text) and that content renders correctly in both screen and print layouts.
+    - path: "src/styles/**"
+      instructions: >-
+        Check that changes to print.css keep the generated PDF CV on clean pages, and that screen styles do not break the print layout.
+    - path: "public/.well-known/**"
+      instructions: >-
+        security.txt is signed by security.txt.sig; flag edits to security.txt that do not update the signature and an Expires date in the past.
+    - path: ".github/workflows/**"
+      instructions: >-
+        Check that deploy secrets are not echoed and that actions are pinned.
+knowledge_base:
+  code_guidelines:
+    enabled: true
+chat:
+  auto_reply: true
