@@ -3,34 +3,37 @@
 # Options: https://github.com/The-PR-Agent/pr-agent/blob/v0.50.0/pr_agent/settings/configuration.toml
 
 [github_app]
-# Review draft pull requests too, and run /describe and /review again on every push.
+# Review draft pull requests too, and run /describe and /review again after each push by a person.
+# The PR-Agent host skips pull requests and pushes from bot accounts.
 feedback_on_draft_pr = true
 handle_push_trigger = true
 
 [pr_reviewer]
 num_max_findings = 5
 extra_instructions = """\
-AGENTS.md is already in your context. Also check these rules:
+Repository rules. Check every rule in each area the diff touches. A changed line that breaks a rule here or in AGENTS.md is a finding, even when the code runs.
 
-Content and print:
-- Images have meaningful `alt` text, headings keep their order, and link text names its target.
-- Content renders in both layouts: a change to `src/styles/print.css` or to `-print-only` and `-print-hidden` markup keeps the A4 PDF from `scripts/generatepdf.js` free of split blocks and empty pages.
-- The `jan-trejbal.pdf` link in `src/layouts/BaseLayout.astro` matches the file name that `generate:pdf` writes in `.github/workflows/build-and-deploy.yml`.
+Content and print (`src/pages/`, `src/components/`, `src/layouts/`, `src/styles/print.css`):
+- Flag an `<img>` without `alt` text, a skipped heading level, or link text that does not name its target.
+- A change to `print.css` or to `-print-only` / `-print-hidden` markup says in the PR description that the PDF was regenerated and checked.
+- A change to the PDF name `jan-trejbal.pdf` updates the download link in `BaseLayout.astro`, `build:pdf` in `package.json` and the `generate:pdf` call in `.github/workflows/build-and-deploy.yml` in the same PR.
 
-security.txt:
-- An edit to `public/.well-known/security.txt` comes with a new detached signature in `security.txt.sig`.
-- `security.txt` has exactly one well-formed `Expires:` field with a date in the future.
-- `Makefile` targets sign and verify `public/.well-known/security.txt`; flag paths under the old `static/` directory.
+security.txt (`public/.well-known/`, `Makefile`):
+- An edit to `security.txt` comes with a new detached signature in `security.txt.sig`.
+- `security.txt` has exactly one `Expires:` field with a future RFC 3339 date-time (RFC 9116).
+- Flag a `Makefile` path under the old `static/` directory; the signed files live in `public/.well-known/`.
 
-CI:
-- Uploaded artifacts keep `include-hidden-files: true`, so `.well-known/` reaches GitHub Pages.
-- Actions use a release tag or commit SHA, never a branch. The `deploy` job runs only on push to `main` or `master`.
+CI (`.github/workflows/`):
+- Flag an `upload-artifact` step for `dist/` without `include-hidden-files: true`.
+- Flag a `uses:` reference to a branch; actions use a release tag or commit SHA.
 """
 
 [pr_code_suggestions]
 # Publish only suggestions scored 5 or higher (0-10).
 suggestions_score_threshold = 5
-extra_instructions = "Prefer existing project helpers and patterns over new abstractions. Do not suggest edits to the vendored `src/styles/belmu.css` or the generated `security.txt.sig`."
+# Drop a suggestion whose score could not be computed; the default 7 would publish it.
+score_on_reflection_failure = 4
+extra_instructions = "Prefer existing project helpers and patterns over new abstractions. Do not suggest edits to `public/.well-known/security.txt.sig`, which gpg writes."
 
 [ignore]
 # Generated code and lock files. Replaces the default list; keep vendor/** first.
