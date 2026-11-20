@@ -1,0 +1,40 @@
+# PR-Agent settings for this repository. PR-Agent reads this file from the
+# default branch (main). It also reads AGENTS.md as review context.
+# Options: https://github.com/The-PR-Agent/pr-agent/blob/v0.50.0/pr_agent/settings/configuration.toml
+
+[github_app]
+# Review draft pull requests too, and run /describe and /review again on every push.
+feedback_on_draft_pr = true
+handle_push_trigger = true
+
+[pr_reviewer]
+num_max_findings = 5
+extra_instructions = """\
+AGENTS.md is already in your context. Also check these rules:
+
+Content and print:
+- Images have meaningful `alt` text, headings keep their order, and link text names its target.
+- Content renders in both layouts: a change to `src/styles/print.css` or to `-print-only` and `-print-hidden` markup keeps the A4 PDF from `scripts/generatepdf.js` free of split blocks and empty pages.
+- The `jan-trejbal.pdf` link in `src/layouts/BaseLayout.astro` matches the file name that `generate:pdf` writes in `.github/workflows/build-and-deploy.yml`.
+
+security.txt:
+- An edit to `public/.well-known/security.txt` comes with a new detached signature in `security.txt.sig`.
+- `security.txt` has exactly one well-formed `Expires:` field with a date in the future.
+- `Makefile` targets sign and verify `public/.well-known/security.txt`; flag paths under the old `static/` directory.
+
+CI:
+- Uploaded artifacts keep `include-hidden-files: true`, so `.well-known/` reaches GitHub Pages.
+- Actions use a release tag or commit SHA, never a branch. The `deploy` job runs only on push to `main` or `master`.
+"""
+
+[pr_code_suggestions]
+# Publish only suggestions scored 5 or higher (0-10).
+suggestions_score_threshold = 5
+extra_instructions = "Prefer existing project helpers and patterns over new abstractions. Do not suggest edits to the vendored `src/styles/belmu.css` or the generated `security.txt.sig`."
+
+[ignore]
+# Generated code and lock files. Replaces the default list; keep vendor/** first.
+glob = [
+    "vendor/**",
+    "src/styles/belmu.css",
+]
