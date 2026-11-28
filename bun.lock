@@ -8,7 +8,7 @@
         "astro": "^7.4.13",
       },
       "devDependencies": {
-        "puppeteer": "^25.18.1",
+        "puppeteer": "^25.19.0",
       },
     },
   },
@@ -153,7 +153,7 @@
 
     "@oxc-project/types": ["@oxc-project/types@0.159.0", "", {}, "sha512-QWjWhxheluOJ82kDHNyps00UvRpQCtI34B5A/SzpgQycUD/79FuvT4I0aQIfE/bdPwKmX4QPftnywFBH6FxJhQ=="],
 
-    "@puppeteer/browsers": ["@puppeteer/browsers@3.2.7", "", { "dependencies": { "modern-tar": "^0.8.6", "yargs": "^18.0.0" }, "peerDependencies": { "proxy-agent": ">=8.0.1", "yauzl": "^2.10.0 || ^3.4.0" }, "optionalPeers": ["proxy-agent", "yauzl"], "bin": { "browsers": "lib/main-cli.js" } }, "sha512-B3C/v8OEEaJYcN1IzzgbPmt+GbFANr4Mf/NrqNuGk/dIchrv6quNqxgT+A6qE0Ge0MN95NjKUddcR1JMpYRMWA=="],
+    "@puppeteer/browsers": ["@puppeteer/browsers@3.3.0", "", { "dependencies": { "modern-tar": "^0.8.6", "yargs": "^18.0.0" }, "peerDependencies": { "proxy-agent": ">=8.0.1", "yauzl": "^2.10.0 || ^3.4.0" }, "optionalPeers": ["proxy-agent", "yauzl"], "bin": { "browsers": "lib/main-cli.js" } }, "sha512-ZiOVHQ5KmsinwZJMwRc/a3xsGHbi9dRuAyf2gq4i9J5vRaI4r7SSIaJUniF1JVClG+qNoVdtBBWfL08N9Oib6g=="],
 
     "@rolldown/binding-android-arm-eabi": ["@rolldown/binding-android-arm-eabi@1.3.3", "", { "os": "android", "cpu": "arm" }, "sha512-K1itOg1Xl50XyjLDa4qQZqaYsfiQbFbFRWXOEOupOsGr3whhm5ed4lgySd6Inohv2TB0+sdU4AxORKuS/TGang=="],
 
@@ -287,7 +287,7 @@
 
     "devlop": ["devlop@1.1.0", "", { "dependencies": { "dequal": "^2.0.0" } }, "sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA=="],
 
-    "devtools-protocol": ["devtools-protocol@0.0.1717327", "", {}, "sha512-3RDLDzyvv8XAYf1L+TL1og0EEk0eOW1Jn0yi88uG6Bj8fUKO1ZKfgNtwbJkqf5SWdPDS4VGEPxwdUWz78V6Xcg=="],
+    "devtools-protocol": ["devtools-protocol@0.0.1724436", "", {}, "sha512-GcO1782pvzpmY4pQO1zjr8WZ95Wv8GodOs0v5J9QWwLGulTzfYIYECEd9iUsnqJmcehu+VMKxZquvjY8T2jhAA=="],
 
     "diff": ["diff@9.0.0", "", {}, "sha512-svtcdpS8CgJyqAjEQIXdb3OjhFVVYjzGAPO8WGCmRbrml64SPw/jJD4GoE98aR7r25A0XcgrK3F02yw9R/vhQw=="],
 
@@ -453,9 +453,9 @@
 
     "property-information": ["property-information@7.1.0", "", {}, "sha512-TwEZ+X+yCJmYfL7TPUOcvBZ4QfoT5YenQiJuX//0th53DE6w0xxLEtfK3iyryQFddXuvkIk51EEgrJQ0WJkOmQ=="],
 
-    "puppeteer": ["puppeteer@25.18.1", "", { "dependencies": { "@puppeteer/browsers": "3.2.7", "chromium-bidi": "157.0.8090-0", "devtools-protocol": "0.0.1717327", "lilconfig": "^3.1.4", "puppeteer-core": "25.18.1", "typed-query-selector": "^2.12.3" }, "bin": { "puppeteer": "lib/puppeteer/node/cli.js" } }, "sha512-fCsfwERKluvC84jsVyhDoBZMNuI8t5FFnWXcTdH1vn3NhMk6clZcrF0Da2se6/Hj6CBJ+2PRPpqeV0qPIETeJA=="],
+    "puppeteer": ["puppeteer@25.19.0", "", { "dependencies": { "@puppeteer/browsers": "3.3.0", "chromium-bidi": "157.0.8090-0", "devtools-protocol": "0.0.1724436", "lilconfig": "^3.1.5", "puppeteer-core": "25.19.0", "typed-query-selector": "^2.12.3" }, "hasInstallScript": true, "bin": { "puppeteer": "lib/puppeteer/node/cli.js" } }, "sha512-38yJg6bAi6TOfQr/UTKllIVfm5zMWxBzURETCF3mzSylKQr9yUMyLz7YMl2yJCgfkJfhRl+j0qeKtm++X4J68w=="],
 
-    "puppeteer-core": ["puppeteer-core@25.18.1", "", { "dependencies": { "@puppeteer/browsers": "3.2.7", "chromium-bidi": "157.0.8090-0", "devtools-protocol": "0.0.1717327", "typed-query-selector": "^2.12.3", "webdriver-bidi-protocol": "1.0.2", "ws": "^8.22.1" } }, "sha512-C0wHOJHDfAggGBtN5uUfsJGpeSKtPL5jzhgQYDuz4XKeOG1FUkxeZI2M5yK7AUyrdHO+RgDuiCfjmOpcw3PYTA=="],
+    "puppeteer-core": ["puppeteer-core@25.19.0", "", { "dependencies": { "@puppeteer/browsers": "3.3.0", "chromium-bidi": "157.0.8090-0", "devtools-protocol": "0.0.1724436", "typed-query-selector": "^2.12.3", "webdriver-bidi-protocol": "1.0.2", "ws": "^8.23.0" } }, "sha512-F4pw8kpSczJS3TCHBw7/qskDxv4cMj09oOv7BwhHGYOerxLF1Sk2t4tpWlLvy6Vx/mM6TuqkDj4j0j3PRN1FiA=="],
 
     "radix3": ["radix3@1.1.2", "", {}, "sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA=="],
 
